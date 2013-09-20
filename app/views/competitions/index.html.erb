@@ -1,0 +1,25 @@
+<h1>Competitions</h1>
+
+<div id="competitions">
+
+  <% @competitions.each do |country, competitions| %>
+ 
+    <div class="table-division">
+      <div class="table-header"><%= country %></div>
+      <div class="table-rows">
+
+      <% competitions.each do |competition| %>
+        <div class="table-row">
+        <%= link_to competition.year, competition %>
+        <%= competition.city %>
+        </div>
+      <% end %>
+
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<br/>
+
+<%= link_to 'New Competition', new_competition_path %>

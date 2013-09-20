@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Demonwinner</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id="header-wrapper">
+	<div id="header">
+		<div id="header-logo">Demon Winner</div>
+		<div id="header-menu">
+			<div class="header-menu-tabs"><%= link_to  'COMPETITIONS', competitions_path %></div>
+			<div class="header-menu-tabs"><%= link_to  'PAINTERS', painters_path %></div>
+			<div class="header-menu-tabs">MY ACCOUNT</div>
+			<div class="header-menu-tabs">SUPPORT</div>
+		</div>
+	</div>
+</div>
+	
+
+
+<div id="body">
+	<div id="inner-body">
+		<%= yield %> 
+	</div>
+</div>
+
+</body>
+</html>

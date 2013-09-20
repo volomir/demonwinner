@@ -1,0 +1,74 @@
+// Place all the styles related to the Competitions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#competitions {
+
+
+}
+
+.table-division {
+	display: inline-block;
+	vertical-align: top;
+	margin: 8px;
+}
+
+.table-header {
+	display: block;
+	margin: 5px;
+}
+
+.table-rows {
+	display: inline-block;
+	margin: 5px;
+}
+
+.table-row {
+	display: block;
+	margin: 5px;
+}
+
+.category {
+	margin: 50px;
+}
+
+.name {
+	display: block;
+}
+
+.awards {
+	margin: auto;
+}
+
+.award {
+	display: inline-block;
+	max-width: 250px;
+	max-height: 250px;
+	padding: 5px;
+}
+
+.award .left {
+	display: inline-block;
+	float: left;
+	height: 200px;
+}
+
+.demon_thumb img {
+	width: 40px;
+	margin: 20px 0 0 0;
+}
+
+.award .right {
+	display: inline-block;
+	width: 200px;
+}
+
+.award .right img {
+	height: 150px;
+	display: block;
+	margin: auto;
+}
+
+.award .right div {
+	display: block;
+}
